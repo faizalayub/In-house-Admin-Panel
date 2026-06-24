@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --input-type=module)",
+      "Bash(npx vite *)",
+      "WebFetch(domain:primevue.org)",
+      "WebFetch(domain:unpkg.com)"
+    ]
+  }
+}

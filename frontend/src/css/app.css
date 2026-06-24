@@ -1,0 +1,105 @@
+/* Inter */
+@font-face {
+    font-family: 'Inter';
+    src: url('/asset/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/asset/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/* Asap */
+@font-face {
+    font-family: 'Asap';
+    src: url('/asset/fonts/Asap/Asap-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Asap';
+    src: url('/asset/fonts/Asap/Asap-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/* Times New Roman */
+@font-face {
+    font-family: 'Times';
+    src: url('/asset/fonts/Times/Times New Roman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Times';
+    src: url('/asset/fonts/Times/Times New Roman - Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Times';
+    src: url('/asset/fonts/Times/Times New Roman - Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Times';
+    src: url('/asset/fonts/Times/Times New Roman - Bold Italic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Verdana */
+@font-face {
+    font-family: 'Verdana';
+    src: url('/asset/fonts/Verdana/Verdana.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Verdana';
+    src: url('/asset/fonts/Verdana/Verdana-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Verdana';
+    src: url('/asset/fonts/Verdana/Verdana-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Verdana';
+    src: url('/asset/fonts/Verdana/Verdana-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@import 'tailwindcss';
+@plugin 'tailwindcss-primeui';
+
+@theme {
+    --color-primary:     #c8102e;
+    --color-primary-end: #ef5b1a;
+    --color-app-bg:      #fff8f5;
+}
+
+@utility bg-primary-gradient {
+    background: linear-gradient(110deg, var(--color-primary), var(--color-primary-end));
+}
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    html { font-size: 15px; }
+}
+
+@keyframes dialog-backdrop-in {
+    from { background-color: transparent; }
+    to   { background-color: rgb(0 0 0 / 0.5); }
+}
