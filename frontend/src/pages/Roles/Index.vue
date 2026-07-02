@@ -34,16 +34,16 @@
                         <span class="text-gray-500 tabular-nums">{{ data.users_count }}</span>
                     </template>
                 </Column>
-                <Column>
+                <Column field="id" header="Actions">
                     <template #body="{ data }">
-                        <div class="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="flex items-center gap-1">
                             <RouterLink :to="{ name: 'roles.show', params: { id: data.id } }">
-                                <button class="inline-flex items-center gap-1 px-3 py-0.5 rounded text-xs font-medium text-primary hover:bg-red-50 transition-colors">
+                                <button class="cursor-pointer inline-flex items-center gap-1 px-3 py-0.5 rounded text-xs font-medium text-primary hover:bg-red-50 transition-colors">
                                     <i class="pi pi-cog text-xs" /> Configure
                                 </button>
                             </RouterLink>
                             <button
-                                class="w-7 h-7 flex items-center justify-center rounded text-gray-400 hover:bg-red-50 hover:text-red-500 transition-colors"
+                                class="cursor-pointer w-7 h-7 flex items-center justify-center rounded text-gray-400 hover:bg-red-50 hover:text-red-500 transition-colors"
                                 @click="confirmDelete(data)"
                             >
                                 <i class="pi pi-trash text-xs" />
